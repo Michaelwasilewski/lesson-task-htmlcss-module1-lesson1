@@ -15,11 +15,9 @@ html {
   display: inline-block;
   color: white;
   font-weight: 800;
-  border: 1px solid greenyellow;
 }
 .navigation {
   display: inline-block;
-  border: 1px solid greenyellow;
 
   background-color: transparent;
 }
