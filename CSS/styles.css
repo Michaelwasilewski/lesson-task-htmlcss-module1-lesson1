@@ -1,25 +1,30 @@
 body,
 html {
-  background-color: rgb(60, 81, 98);
+  background-color: rgb(80, 103, 122);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
+/*ID: has the highest specificity level, it always wins
+only way to override it is by writing inline styles.*/
+
+#my-header {
+  background-color: rgb(58, 53, 85);
+}
+
 .my-header {
   display: block;
-  background-color: black;
+  background-color: rgb(8, 47, 97);
   height: 48px;
 }
 
 .my-header .logo {
   display: inline-block;
-  color: white;
+  color: #fff;
   font-weight: 800;
 }
 .navigation {
   display: inline-block;
-
-  background-color: transparent;
 }
 .navigation ul {
   list-style: none;
@@ -29,10 +34,21 @@ html {
   display: inline-block;
   margin-right: 20px;
 }
-.navigation ul li a {
-  color: white;
+/* general selection:
+any anchor tag that is inside 
+.navigation will be yellow
+*/
+
+.navigation a {
+  color: yellowgreen;
   text-decoration: none;
 }
+
+/*Direct descendant of .navigation */
+.navigation > a {
+  color: blue;
+}
+
 .hero-banner {
   background-color: antiquewhite;
   background-image: url("/img/guitar-1.png");
@@ -43,4 +59,22 @@ html {
 .inner {
   width: 1080px;
   margin: 0 auto;
+}
+#home-page h2 {
+  color: rgb(64, 54, 110);
+}
+
+#Guitar-page h2,
+h3,
+h4 {
+  color: rgb(64, 54, 110);
+}
+#contact-page h2 {
+  color: rgb(64, 54, 110);
+}
+#about h2 {
+  color: rgb(64, 54, 110);
+}
+footer {
+  background-color: yellow;
 }
