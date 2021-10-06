@@ -47,6 +47,8 @@ any anchor tag that is inside
 /*Direct descendant of .navigation */
 .navigation > a {
   color: blue;
+  border: 2px dotted yellow;
+  padding: 10px;
 }
 
 .hero-banner {
@@ -77,4 +79,11 @@ h4 {
 }
 footer {
   background-color: yellow;
+}
+
+.hero-banner-guitar {
+  background-image: url(/img/guitar-3.png);
+  background-size: cover;
+  height: 420px;
+  width: 680px;
 }
