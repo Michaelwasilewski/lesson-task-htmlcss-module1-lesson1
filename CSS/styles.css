@@ -87,3 +87,10 @@ footer {
   height: 420px;
   width: 680px;
 }
+
+.picture-of-guitar {
+  background-image: url(/img/guitar-3.png);
+  background-size: cover;
+  height: 240px;
+  width: 240px;
+}
