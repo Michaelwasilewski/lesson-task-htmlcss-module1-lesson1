@@ -1,84 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Guitar kings website-->
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guitar Kings, best guitars in the world!">
-
-    <title class="Titlte">Guitar kings | Home</title>
-  <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-
-<body id="home-page">
-    <!-- semantic tag: header-->
-    <header id="my-header"> <div class="inner">
-        <span class="logo">Guitar Kings</span>
-        <nav class="navigation">
-           
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get real authentic, hand-crafted guitars from Guitar Kings"
+    />
+    <title>Guitar Kings | Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Guitar Kings</a>
+      <nav>
         <ul>
-            <li> <a href="/"> Home </li>
-            <li> <a href="./about.html">About</a></li>
-            <li> <a href="./guitars.html">Guitars</a></li>
-            <li> <a href="./contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guitars.html">Guitars</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        </nav></div>
-
-
+      </nav>
     </header>
-    <!-- HasLayout: element will stack on top of other elements-->
-    <section class="hero-banner">
-        <div class="inner"><h1>Authentic Handmade Guitars</h1>
-         <a href="guitars.html">View Guitars</a></div>
-    </section>
-    
-    <section class="our-guitars">
-        <div class="inner">
-            <h2>Our Guitars are:</h2>
-       <ul> <li class="">Made with real pennsylvanian wood</li>
-        <li>Crafted by family-run business</li>
-        <li>Built to last a life time</li>
-        <li>Beautiful unique sound</li>
-        <li>Options for all music lovers</li>
-      </div>
-    
-    
-    </ul>
-
-    </section>
-<img src="img/guitar-2.png" alt="Hand strumming guitar" srcset="">
-    <section class="> <h2> "Reviews"</h2>
-        <div class="inner"> <h2>Reviews</h2></div>
-    </section>
-    
-    <div class="inner"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dignissimos provident asperiores ad fugiat tenetur atque harum incidunt, minus corrupti porro, consequuntur, quam alias qui earum cupiditate ducimus facere quo.</p></div>
-    <section class=">
-        <h2>View-our-guitars"></h2>
-        <div class="inner"><h2>View Our Guitars</h2></div>
-    </section> <div class="inner"><p>Adirondack red</p> </div>
-    <div class="inner" <h1> Adirondack red</h1>
-        <p>$500</p>
-        <h1>Adirondack red</h1>
-        <p><a href="guitars.html">View</a></p>
-        <h1>Adirondack red</h1>
-        <div class="inner" <h1> Adirondack red</h1>
-            <p>$500</p>
-            <h1>Adirondack red</h1>
-            <p><a href="guitars.html">View</a></p>
-            <h1>Adirondack red</h1>
-            
-        
-</div>
-    <footer class="footer">
-        <div class="inner">
-            <h2>&copy; CopyRight </h2></div>
-    </footer>
-
-    <script src="./js/scritp.js"></script>
-</body>
-
-
-
+    <main>
+      <section class="welcome">
+        <h1>Authentic Handmade Guitars</h1>
+        <a href="guitars.html" class="cta">View Guitars</a>
+      </section>
+      <section class="selling-points">
+        <div>
+          <h2>Our Guitars Are:</h2>
+          <ul>
+            <li>Made with real Pennsylvanian wood</li>
+            <li>Crafted by a family-run business</li>
+            <li>Built to last a lifetime</li>
+            <li>Beautiful unique sound</li>
+            <li>Options for all music lovers</li>
+          </ul>
+        </div>
+        <img
+          src="img/guitar-2.png"
+          alt="Hand strumming guitar"
+          class="selling-points__images"
+        />
+      </section>
+      <section class="reviews">
+        <h2>Reviews</h2>
+        <div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse quis dictum elit. In hac habitasse platea dictumst." -
+            Bob Willis
+          </p>
+          <img
+            src="img/person-1.png"
+            alt="Profile picture of Bob Willis"
+            class="review__images"
+          />
+        </div>
+        <div>
+          <p>
+            "Maecenas interdum, erat nec pulvinar euismod, eros erat ornare
+            mauris, commodo vestibulum odio nunc id urna. Sed volutpat consequat
+            dolor, nec sollicitudin elit eleifend vitae." - Sally Oldfield
+          </p>
+          <img
+            src="img/person-2.png"
+            alt="Profile picture of Bob Willis"
+            class="review__images"
+          />
+        </div>
+      </section>
+      <section class="featured">
+        <h2>View Our Guitars</h2>
+        <div class="featured--products">
+          <img src="img/guitar-2.png" alt="Adirondack Red" />
+          <h3>Adirondack Red</h3>
+          <p>$500</p>
+          <a href="products/adirondack-red.html" class="cta">View</a>
+        </div>
+        <div class="featured--products">
+          <img src="img/guitar-2.png" alt="Adirondack Red" />
+          <h3>Adirondack Red</h3>
+          <p>$500</p>
+          <a href="products/adirondack-red.html" class="cta cta-sale"
+            >On sale</a
+          >
+        </div>
+        <div class="featured--products">
+          <img src="img/guitar-2.png" alt="Adirondack Red" />
+          <h3>Adirondack Red</h3>
+          <p>$500</p>
+          <a href="products/adirondack-red.html" class="cta">View</a>
+        </div>
+        <div class="featured--products">
+          <img src="img/guitar-2.png" alt="Adirondack Red" />
+          <h3>Adirondack Red</h3>
+          <p>$500</p>
+          <a href="products/adirondack-red.html" class="cta">View</a>
+        </div>
+      </section>
+    </main>
+    <footer>Copyright &copy;</footer>
+  </body>
 </html>

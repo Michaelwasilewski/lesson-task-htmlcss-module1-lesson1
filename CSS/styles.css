@@ -1,96 +1,71 @@
-body,
-html {
-  background-color: rgb(80, 103, 122);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "Boots And Spurs";
+  src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
-/*ID: has the highest specificity level, it always wins
-only way to override it is by writing inline styles.*/
-
-#my-header {
-  background-color: rgb(58, 53, 85);
+body {
+  font-family: "roboto", Verdana, Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.my-header {
-  display: block;
-  background-color: rgb(8, 47, 97);
-  height: 48px;
+h1,
+h2,
+.logo {
+  font-family: "Boots and Spurs", "Segoe UI", "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
+}
+product-list h2 {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.my-header .logo {
-  display: inline-block;
-  color: #fff;
-  font-weight: 800;
-}
-.navigation {
-  display: inline-block;
-}
-.navigation ul {
-  list-style: none;
-}
-
-.navigation ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-/* general selection:
-any anchor tag that is inside 
-.navigation will be yellow
-*/
-
-.navigation a {
-  color: yellowgreen;
-  text-decoration: none;
-}
-
-/*Direct descendant of .navigation */
-.navigation > a {
-  color: blue;
-  border: 2px dotted yellow;
-  padding: 10px;
-}
-
-.hero-banner {
-  background-color: antiquewhite;
-  background-image: url("/img/guitar-1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 420px;
-}
-.inner {
-  width: 1080px;
-  margin: 0 auto;
-}
-#home-page h2 {
-  color: rgb(64, 54, 110);
-}
-
-#Guitar-page h2,
-h3,
-h4 {
-  color: rgb(64, 54, 110);
-}
-#contact-page h2 {
-  color: rgb(64, 54, 110);
-}
-#about h2 {
-  color: rgb(64, 54, 110);
-}
+header,
 footer {
-  background-color: yellow;
+  background-color: #202020;
+  color: #fff;
 }
 
-.hero-banner-guitar {
-  background-image: url(/img/guitar-3.png);
-  background-size: cover;
-  height: 420px;
-  width: 420px;
+header a {
+  color: #fff;
 }
 
-.picture-of-guitar {
-  background-image: url(/img/guitar-3.png);
+.cta {
+  background-color: #bb0000;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.reviews {
+  background-color: #e8e8e8;
+}
+
+.featured--products {
+  background-color: #fbfbfb;
+}
+
+.cta-sale {
+  background-color: #127300;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Homepage */
+.welcome {
+  background-image: url("../img/guitar-1.png");
   background-size: cover;
-  height: 240px;
-  width: 240px;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+.selling-points__images {
+  border-radius: 100px;
+}
+.review__images {
+  border-radius: 50px;
+}
+/* Contact Page*/
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
 }
